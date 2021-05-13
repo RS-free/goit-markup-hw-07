@@ -18,32 +18,31 @@
   <body>
     <header class="page-header line">
       <div class="conteiner header-conteiner">
-      <!-- Логотип -->
-      <a href="./" class="logo">Web<span class="studio">Studio</span></a>
-      <!-- Посилання на навігацію сайту -->
-      <nav class="nav">
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="./index.html" class="link current dash">Студія</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link dash">Портфоліо</a>
-          </li>
-          <li class="item">
-            <a href="" class="link dash">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- контакти -->
-      <ul class="contact-header list">
-        <li class="item">
+        <!-- Логотип -->
+        <a href="./" class="logo">Web<span class="studio">Studio</span></a>
+        <!-- Посилання на навігацію сайту -->
+        <nav class="nav">
+          <ul class="site-nav list list--site__nav">
+            <li class="item item--nav">
+              <a href="./index.html" class="link current dash">Студія</a>
+            </li>
+            <li class="item item--nav">
+              <a href="./portfolio.html" class="link dash">Портфоліо</a>
+            </li>
+            <li class="item item--nav">
+              <a href="" class="link dash">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-header list">
+        <li class="item item--nav">
           <a href="mailto:info@devstudio.com" class="link calm">
             <svg class="contact-icon" width="16px" height="12px">
               <use href="./images/icons/sprite.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
-        <li class="item">
+        <li class="item item--nav">
           <a href="tel:+380961111111" class="link calm">
             <svg class="contact-icon" width="10px" height="16px">
               <use href="./images/icons/sprite.svg#icon-smartphone"></use>
@@ -51,13 +50,14 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
-     </div>
+      </ul>
+    </div>
     </header>
     <main>
       <!-- Герой -->
       <section class="hero">
         <div class="conteiner">
-          <h1 class="hero-title">Ефективні рішення <br>для вашого бізнесу</br></h1>
+          <h1 class="hero-title">Ефективні рішення <br/>для вашого бізнесу</h1>
           <button  class="btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
@@ -415,6 +415,7 @@
             </svg>
           </button>
         </div>
+      </div>
     </footer>
 <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
@@ -434,6 +435,7 @@
                   class="form-input"
                   pattern="^[a-zA-ZА-Яа-я\s]+$"
                   placeholder=" "
+                  id="name"
                   required
                   autofocus
                 />
@@ -449,6 +451,7 @@
                   class="form-input"
                   pattern="[0-9]{10}"
                   placeholder=" "
+                  id="tel"
                   required
                 />
                   <svg class="icon">
