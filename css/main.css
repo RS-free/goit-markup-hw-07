@@ -1,4 +1,73 @@
 @charset "UTF-8";
+body {
+  font-size: 14px;
+  font-family: var(--main-fonts);
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--title-text-color);
+}
+
+/* скидання фокусу */
+a:active,
+a:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input:active,
+textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.list {
+  list-style: none;
+  /* скидання відступів у списках*/
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,71 +235,6 @@
   --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
-  font-size: 14px;
-  font-family: var(--main-fonts);
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  background-color: var(--title-text-color);
-}
-
-/* скидання фокусу */
-a:active,
-a:focus {
-  outline: none;
-}
-
-input,
-textarea {
-  outline: none;
-}
-
-input:active,
-textarea:active {
-  outline: none;
-}
-
-:focus {
-  outline: none;
-}
-
-.list {
-  list-style: none;
-  /* скидання відступів у списках*/
-  padding: 0;
-  margin: 0;
-}
-
-.link {
-  color: inherit;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.conteiner {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -240,10 +244,6 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-.line {
-  border-bottom: 1px solid #ececec;
 }
 
 /*Герой*/
