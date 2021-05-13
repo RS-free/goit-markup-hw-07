@@ -1,0 +1,122 @@
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: var(--second-font);
+  color: var(--accent-text-color);
+  text-decoration: none;
+}
+
+.studio {
+  color: var(--main-text-color);
+}
+
+/* навігація */
+.nav {
+  margin-left: 93px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: var(--margin);
+}
+
+.site-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  /*силка блочна та з внутрішніми відступами*/
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* підкреслення */
+.dash {
+  position: relative;
+}
+
+.dash::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 28px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+  transition: transform var(--timing-function);
+}
+
+.dash::after {
+  transform: scale(0);
+}
+
+.current::after {
+  transform: scale(1);
+}
+
+.dash:hover::after,
+.dash:focus::after {
+  transform: scale(1);
+}
+
+/* контакти */
+.contact-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact-header .item + .item {
+  margin-left: var(--margin);
+}
+
+.current {
+  color: var(--accent-text-color);
+  transition: color var(--timing-function);
+}
+
+.link {
+  transition: color var(--timing-function);
+}
+
+.link-current:hover,
+.link-current:focus {
+  color: var(--accent-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+
+.calm {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: var(--icon-color);
+  background-color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--additional-text-color);
+  transition: color var(--timing-function);
+}
+
+.calm:hover,
+.calm:focus {
+  color: var(--accent-text-color);
+}
+.contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
