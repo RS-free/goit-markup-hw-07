@@ -1075,7 +1075,7 @@ img {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: black;
+  color: #757575;
   margin-bottom: 4px;
 }
 
@@ -1135,7 +1135,7 @@ textarea {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: black;
+  color: #757575;
   -webkit-transition: border-color var(--timing-function);
   transition: border-color var(--timing-function);
 }
@@ -1184,6 +1184,15 @@ textarea:hover,
 
 .checkbox-link {
   color: var(--accent-text-color);
+  margin-left: 5px;
+}
+
+.checkbox-label:hover {
+  border-color: var(--accent-text-color);
+}
+
+.btn__application {
+  margin-left: 120px;
 }
 
 /* портфоліо */
