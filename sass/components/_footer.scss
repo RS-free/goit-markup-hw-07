@@ -1,14 +1,13 @@
 /* ФУТЕР */
 .footer {
-  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bgc-color);
-}
 
-.footer > .conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  & > .conteiner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .logo-studio {
@@ -24,19 +23,20 @@
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
-}
 
-.address-item:hover,
-.address-item:focus {
-  color: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
 
 .contacts-footer {
   color: var(--adress-text);
-}
-.contacts-footer:hover,
-.contacts-footer:focus {
-  color: var(--accent-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
 
 .general {
@@ -51,15 +51,18 @@
 .general > .block + .block + .block-send {
   margin-left: var(--card-set-gap);
 }
+
 .social-icons-list {
   display: flex;
   background-color: inherit;
   margin-left: 35px;
   color: var(--title-text-color);
+
+  & > .social--icons__item-item + .social--icons__item-item {
+    margin-left: 10px;
+  }
 }
-.social-icons-list > .social-icons-item-item + .social-icons-item-item {
-  margin-left: 10px;
-}
+
 .accession {
   display: flex;
   align-items: center;
@@ -69,11 +72,11 @@
   height: 44px;
   border-radius: 50%;
   transition: background-color var(--timing-function);
-}
 
-.accession:hover,
-.accession:focus {
-  background-color: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
 }
 
 .block .title {
@@ -108,11 +111,11 @@
   color: var(--title-text-color);
   cursor: pointer;
   transition: border-color var(--timing-function);
-}
 
-.form-email:hover,
-:focus {
-  border-color: var(--accent-text-color);
+  &:hover,
+  :focus {
+    border-color: var(--accent-text-color);
+  }
 }
 
 .send {

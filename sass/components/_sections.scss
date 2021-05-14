@@ -2,10 +2,10 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.section.about {
-  padding-bottom: 0;
+  &.about {
+    padding-bottom: 0;
+  }
 }
 
 .section-title {
@@ -23,18 +23,26 @@
 
 .description {
   display: flex;
+
+  & > .list--item + .list--item {
+    margin-left: 30px;
+  }
 }
 
-.description > .list-item + .list-item {
-  margin-left: 30px;
-}
-
-.list-item {
+.list--item {
   width: 270px;
+
+  &.text {
+    margin-bottom: 0;
+  }
+
+  &.title {
+    margin-bottom: 10px;
+  }
 }
 
 /* іконки секцій зі спрайта */
-.story {
+.story--icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,28 +58,9 @@
   height: 70px;
 }
 
-.list-item .text {
-  margin-bottom: 0;
-}
-
-.list-item .title {
-  margin-bottom: 10px;
-}
-
 .text {
   color: var(--additional-text-color);
   line-height: 1.7;
-}
-.list .text-name,
-.title-name {
-  font-size: 16px;
-  line-height: 1.17;
-}
-.title-name {
-  font-weight: 500;
-}
-.text-name {
-  color: var(--additional-text-color);
 }
 
 /* секція зайнятості */
@@ -83,11 +72,11 @@
   margin-left: 30px;
 }
 
-.thumb-picture {
+.picture--employment {
   position: relative;
 }
 
-.block-thumb {
+.block--employment {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,12 +121,26 @@
   margin-bottom: 10px;
 }
 
+.list .text-name,
+.title-name {
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.title-name {
+  font-weight: 500;
+}
+
+.text-name {
+  color: var(--additional-text-color);
+}
+
 /* соціальні мережі */
 .social-icons {
   display: inline-flex;
 }
 
-.social-icons-item:not(:last-child) {
+.social--icons__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -152,16 +155,16 @@
   margin-top: 16px;
   transition: background-color var(--timing-function),
     fill var(--timing-function);
-}
 
-.social-icons-link:hover,
-.social-icons-link:focus {
-  background-color: var(--accent-text-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
 
-.social-icons-link:hover .social-icons-svg,
-.social-icons-link:focus .social-icons-svg {
-  fill: var(--title-text-color);
+  &:hover .social-icons-svg,
+  &:focus .social-icons-svg {
+    fill: var(--title-text-color);
+  }
 }
 
 .social-icons-svg {
@@ -176,13 +179,13 @@
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-}
 
-.information .item-icon {
-  flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
-  width: calc((100% - 6 * var(--card-set-gap)) / 6);
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  & .item-icon {
+    flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
+    width: calc((100% - 6 * var(--card-set-gap)) / 6);
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+  }
 }
 
 .icon-logotype {
@@ -194,13 +197,14 @@
   border-radius: 4px;
   padding: 16px 32px;
   transition: border-color var(--timing-function), color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+    color: var(--accent-text-color);
+  }
 }
 
-.icon-logotype:hover,
-.icon-logotype:focus {
-  border-color: var(--accent-text-color);
-  color: var(--accent-text-color);
-}
 .client-icon {
   fill: currentColor;
   width: 106px;

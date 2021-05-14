@@ -59,8 +59,8 @@ typings/
 .rts2_cache_es/
 .rts2_cache_umd/
 
-# Optional REPL history
-.node_repl_history
+# Optional REPL history--icon
+.node_repl_history--icon
 
 # Output of 'npm pack'
 *.tgz
