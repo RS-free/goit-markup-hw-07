@@ -291,20 +291,23 @@
             </li>
           </ul>
         </div>
-        <div class="block-send">
-          <h3 class="title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-              <input
-              type="email"
-              class="form-email"
-              name="mail"
-              id="mail"
-              placeholder="Email"/>
-          <button class="btn-send">Підписатися
-            <svg class="send">
-              <use href="./images/icons/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-        </div>
+        <form class="block-send">
+          <div class="block-send__title">
+            <h3 class="title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+                <input
+                type="email"
+                    name="mail"
+                    class="form-email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    placeholder="Email"
+                    required/>
+            <button class="btn-send">Підписатися
+              <svg class="send">
+                <use href="./images/icons/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
