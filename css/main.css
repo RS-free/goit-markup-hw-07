@@ -812,8 +812,7 @@ img {
   transition: border-color var(--timing-function);
 }
 
-.form-email:hover,
-.form-email :focus {
+.form-email:hover, .form-email:focus {
   border-color: var(--accent-text-color);
 }
 

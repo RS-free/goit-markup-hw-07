@@ -112,7 +112,7 @@
   transition: border-color var(--timing-function);
 
   &:hover,
-  :focus {
+  &:focus {
     border-color: var(--accent-text-color);
   }
 }
