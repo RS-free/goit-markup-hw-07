@@ -75,11 +75,22 @@ img {
   max-width: 100%;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
 }
