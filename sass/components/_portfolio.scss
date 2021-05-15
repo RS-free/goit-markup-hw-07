@@ -1,15 +1,14 @@
-/* портфоліо */
-.btn-portfolio {
+.portf-btn {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 
-  & > .btn-portfolio-item + .btn-portfolio-item {
+  & > .portf-btn--item + .portf-btn--item {
     margin-left: 8px;
   }
 }
 
-.portfolio-button {
+.portf-btn--pointer {
   background-color: var(--button-color);
   border: transparent;
   font-weight: 500;
@@ -30,7 +29,7 @@
   }
 }
 
-.link-work {
+.portf-link--work {
   display: flex;
   transition-property: box-shadow var(--timing-function);
 
@@ -41,34 +40,23 @@
   }
 }
 
-.examples {
+.portf-examples {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.picture-item {
+.portf-picture--item {
   display: flex;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
 
-.example-thumb {
+.portf-example--thumb {
   display: flex;
   flex-direction: column;
-
-  &:hover .product-overlay {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  &:hover,
-  :focus .product-overlay {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .work-information {
@@ -79,7 +67,7 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.portf-link-title {
+.portf-link--title {
   margin-bottom: 4px;
   color: var(--main-text-color);
   font-size: 18px;
@@ -87,19 +75,19 @@
   letter-spacing: 0.06em;
 }
 
-.portf-link-text {
+.portf-link--text {
   margin-bottom: 0;
   color: var(--additional-text-color);
   font-size: 16px;
   line-height: 1.8;
 }
 
-.product-thumb {
+.portf-product--thumb {
   position: relative;
   overflow: hidden;
 }
 
-.product-overlay {
+.portf-product--overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,9 +97,20 @@
   transform: translateY(100%);
   opacity: 0;
   transition: transform var(--timing-function), opacity var(--timing-function);
+
+  .portf-example--thumb:hover & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .portf-example--thumb:hover,
+  :focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.product-text {
+.portf-product--text {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
